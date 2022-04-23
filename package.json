@@ -1,0 +1,20 @@
+{
+  "name": "demo-helper-pritam",
+  "version": "1.0.7",
+  "type": "module",
+  "source": "src/index.js",
+  "exports": {
+    "require": "./dist/helper.cjs",
+    "default": "./dist/helper.modern.js"
+  },
+  "main": "./dist/helper.cjs",
+  "module": "./dist/helper.module.js",
+  "unpkg": "./dist/helper.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "dependencies": {
+    "microbundle": "^0.14.2"
+  }
+}
